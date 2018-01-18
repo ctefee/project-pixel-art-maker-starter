@@ -4,7 +4,7 @@
 
 function makeGrid() {
 	let input_height = $('#input_height').val(); // get access to height
-	var input_width = $('#input_width').val();   // get access to width
+	let input_width = $('#input_width').val();   // get access to width
 	var tbl = $('#pixel_canvas'); // get access to html table
 
 	$(tbl).html(''); // erase the table content
