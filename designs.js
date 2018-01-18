@@ -5,17 +5,17 @@
 function makeGrid() {
 	let input_height = $('#input_height').val(); // get access to height
 	let input_width = $('#input_width').val();   // get access to width
-	var tbl = $('#pixel_canvas'); // get access to html table
+	let tbl = $('#pixel_canvas'); // get access to html table
 
 	$(tbl).html(''); // erase the table content
 
-	var tableHtml = ''; // create variable to new table content
+	let tableHtml = ''; // create variable to new table content
 
 	// loop through each table row
-	for (var i = 0; i < input_height; i++) {
+	for (let i = 0; i < input_height; i++) {
 		tableHtml = tableHtml + '<tr>';
 		// loop through each column
-		for (var k = 0; k < input_width; k++) {
+		for (let k = 0; k < input_width; k++) {
 			tableHtml = tableHtml + '<td onclick="  $(this).css(  \'background-color\', $(\'#colorPicker\').val()  )  "></td>';
 		}
 		tableHtml = tableHtml + '</tr>';
